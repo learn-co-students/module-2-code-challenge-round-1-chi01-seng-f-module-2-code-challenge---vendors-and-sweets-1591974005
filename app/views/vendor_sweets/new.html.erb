@@ -1,0 +1,11 @@
+<%=form_for @vendor_sweet do |f|%>
+  <%= f.label "Sweet" %>
+  <%= f.collection_select :sweet_ids, Sweet.all, :id, :name %>
+  <%= f.label "Vendor" %>
+  <%= f.collection_select :vendor_ids, Vendor.all, :id, :name %>
+  <%= f.label :price %>
+  <%= f.text_field :price %>
+  <%= f.submit %>
+
+
+<%end%>
