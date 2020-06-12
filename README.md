@@ -1,3 +1,5 @@
+#Just so I have some change to commit
+
 # Rails Code Challenge - Sweets Vendors
 
 For this assessment, you'll be working with a vendors and sweets domain.
