@@ -1,0 +1,25 @@
+<h1>VendorSweet New Page</h1>
+
+<h3>Create VendorSweet</h3>
+
+<%= form_for @vendor_sweet do |f| %>
+<%= f.label "Choose a Vendor:" %><br>
+<%= f.collection_select :vendor_id, @vendors, :id, :name %><br><br>
+
+<%= f.label "Choose a Sweet:" %><br>
+<%= f.collection_select :sweet_id, @sweets, :id, :name %><br><br>
+
+<%= f.label "Enter a Price:" %><br>
+<%= f.number_field :price %><br><br>
+
+<%= f.submit%>
+
+<% if flash[:errors] %>
+  <ul>
+    <% flash[:errors].each do |error| %>
+      <li><%= error %></li>
+    <% end %>
+    <% end %>
+  </ul>
+
+<% end %>
