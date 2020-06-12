@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   # get '/sweets', to: "sweets#index", as: "sweets"
   # get '/vendors', to: "vendors#index", as: "vendors"
 
-  resources :sweets, :vendors ,:vendorsweets
+  resources :sweets, :vendors, :vendor_sweets
 
 
 end
