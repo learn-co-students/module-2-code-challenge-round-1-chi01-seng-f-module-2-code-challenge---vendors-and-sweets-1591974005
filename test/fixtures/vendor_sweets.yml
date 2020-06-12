@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  vendor_id: MyString
+  integer: MyString
+  sweet_id: MyString
+  integer: MyString
+  price: MyString
+  integer: MyString
+
+two:
+  vendor_id: MyString
+  integer: MyString
+  sweet_id: MyString
+  integer: MyString
+  price: MyString
+  integer: MyString
