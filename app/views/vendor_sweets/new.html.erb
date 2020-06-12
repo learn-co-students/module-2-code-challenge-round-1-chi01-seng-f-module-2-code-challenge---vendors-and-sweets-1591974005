@@ -1,0 +1,15 @@
+<h1>Add a Sweet to a Vendor!</h1>
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+    <p style="color:red"> <%= error %> </p>
+<% end %>
+<% end %>
+<%= form_for @vendor_sweet do |f| %>
+    <%= f.label "Sweet" %>
+    <%= f.collection_select :sweet_id, @sweets, :id, :name %><br><br>
+    <%= f.label "Vendor" %>
+    <%= f.collection_select :vendor_id, @vendors, :id, :name %><br><br>
+    <%= f.label :price %>
+    <%= f.text_field :price %><br><br>
+    <%= f.submit "Add Sweet to Vendor Menu" %>
+<% end %>

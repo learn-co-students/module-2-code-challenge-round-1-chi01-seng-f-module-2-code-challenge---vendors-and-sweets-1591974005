@@ -1,7 +1,12 @@
-<h1>All Vendors</h1>
+<h1>Vendor List</h1>
+<h2>Average Price of All Sweets Sold By Vendors: <%= "#{@average_price} cents" %></h2>
 
 <ul>
   <% @vendors.each do |vendor| %>
-    <li><%= vendor.name %></li>
+    <li><%= link_to "#{vendor.name} - Average Sweet Price: #{vendor.average_price} cents", vendor_path(vendor) %></li>
   <% end  %>
 </ul>
+
+<%= link_to "See all Sweets", sweets_path %>
+<br><br>
+<%= link_to "Add a Sweet to a Vendor", new_vendor_sweet_path %>
